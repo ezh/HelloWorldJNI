@@ -1,0 +1,18 @@
+It is not so easy to find project for scala with JNI call.
+
+The first step is always the hardest. I want to make it a bit easy for others.
+
+Please note, that javah generate
+  org_digimead_HelloWorldJNI__.h
+
+make generate
+  liborg_digimead_HelloWorldJNI.so
+
+and scala code call
+  org_digimead_HelloWorldJNI
+
+It is confusing a lot at the beginning.
+
+Also there is a simple build.sbt. Please call 'sbt compile' 'sbt clean' directly to use GNU make
+
+Best regards.
